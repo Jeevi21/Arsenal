@@ -40,7 +40,7 @@ public class DirectedGraphCycleDetection {
 	public static void main(String[] args) {
 		
 		List<Edge> edges = Arrays.asList(new Edge(0,1) , new Edge(1, 2) , new Edge(2,3) , new Edge(3,1));
-		Graph graph = new Graph(edges, true);
+		Graph graph = new Graph(edges, true , 4);
 		
 		List<List<Integer>> adjList = graph.getAdjList();
 		boolean [] isVisted = new boolean[adjList.size()];

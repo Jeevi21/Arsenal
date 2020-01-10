@@ -56,6 +56,23 @@ public class PriorityQueueTest {
 		}
 		
 		
+		//i do it again.
+				queue.add(new Node(1 , " one"));
+				queue.add(new Node(3 , " three"));
+				queue.add(new Node(4 , " four"));
+				queue.add(new Node(5 , " four"));
+				
+				//Now let me try to update 5 to 0.. head should return 0.
+				
+				//https://stackoverflow.com/questions/1871253/updating-java-priorityqueue-when-its-elements-change-priority
+				
+				System.out.println("---------");
+				while(!queue.isEmpty()) {
+					System.out.println(queue.poll());
+				}
+		
+				
+				
 	}
 }
 
