@@ -12,7 +12,7 @@ public class IsValidSudoku {
 		
 			if(i==9 && j==9)
 				done=true;
-			else if(j==9) {
+			else if(j>=9) {
 				ist+=3;
 				jst=0;
 			}
