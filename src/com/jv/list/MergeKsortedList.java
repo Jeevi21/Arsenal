@@ -99,7 +99,20 @@ public class MergeKsortedList {
 	
 	public static void main(String[] args) {
 		
+		int interval=1 , k=7;
 		
+		while(interval< k) {
+			
+			for(int j=0;j<k-interval;j+=interval) {
+				
+				System.out.println(j +" --- "+ (j+interval));
+				j=j+interval;
+				
+			}
+			System.out.println();
+			
+			interval*=2;
+		}
 		
 		
 		
